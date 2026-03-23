@@ -19,7 +19,7 @@ export type SkillLevelValue = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert
 
 export interface Skill extends CosmicObject {
   type?: 'skills'
-  metadata?: {
+  metadata: {
     skill_name?: string
     skill_level?: { key: SkillLevelKey; value: SkillLevelValue } | string
     icon?: string
@@ -28,7 +28,7 @@ export interface Skill extends CosmicObject {
 
 export interface Project extends CosmicObject {
   type?: 'projects'
-  metadata?: {
+  metadata: {
     project_name?: string
     summary?: string
     description?: string
@@ -40,7 +40,7 @@ export interface Project extends CosmicObject {
 
 export interface WorkExperience extends CosmicObject {
   type?: 'work-experience'
-  metadata?: {
+  metadata: {
     role_title?: string
     company_name?: string
     start_date?: string
@@ -52,7 +52,7 @@ export interface WorkExperience extends CosmicObject {
 
 export interface Testimonial extends CosmicObject {
   type?: 'testimonials'
-  metadata?: {
+  metadata: {
     person_name?: string
     title_company?: string
     quote?: string
